@@ -24,13 +24,18 @@
 <header data-nav="1" style="position:fixed;top:0;left:0;right:0;z-index:60">
   <div data-navbg="1" style="position:absolute;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.12);opacity:0;transition:opacity .5s ease;pointer-events:none"></div>
   <nav style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 5vw;min-height:72px">
-    <a href="#hero" aria-label="Salesfive" style="display:block;line-height:0"><img src="salesfive-logo-white.png" alt="Salesfive" style="display:block;height:26px;width:auto"></a>
+    <a href="#hero" aria-label="Salesfive" style="display:block;line-height:0"><img src="salesfive-logo-white.png" alt="Salesfive" style="display:block;height:26px;width:auto"/></a>
     <div style="display:flex;align-items:center;gap:40px">
       <div data-desktopnav="1" style="display:flex;align-items:center;gap:36px">
         <a href="#about" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.62);transition:color .3s ease">Event</a>
         <a href="#about" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.62);transition:color .3s ease">About</a>
         <a href="#details" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.62);transition:color .3s ease">Details</a>
         <a href="#registration" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#F4F4F2;border-bottom:1px solid rgba(255,255,255,.45);padding-bottom:3px;transition:border-color .3s ease">RSVP</a>
+        <div style="display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em">
+          <button data-lang="de" style="background:none;border:0;padding:4px 2px;cursor:pointer;color:#F4F4F2;font:inherit;letter-spacing:.14em">DE</button>
+          <span style="color:rgba(255,255,255,.30)">/</span>
+          <button data-lang="en" style="background:none;border:0;padding:4px 2px;cursor:pointer;color:rgba(255,255,255,.40);font:inherit;letter-spacing:.14em">EN</button>
+        </div>
       </div>
       <button data-burger="1" aria-label="Menü" style="display:none;align-items:center;justify-content:center;width:48px;height:48px;margin-right:-12px;background:none;border:0;cursor:pointer;padding:0">
         <span style="display:block;width:26px;height:9px;border-top:1px solid #F4F4F2;border-bottom:1px solid #F4F4F2"></span>
@@ -41,7 +46,7 @@
 
 <div data-mobilemenu="1" style="position:fixed;inset:0;z-index:70;background:#080808;display:flex;flex-direction:column;justify-content:space-between;padding:22px 6vw 56px;opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s ease">
   <div style="display:flex;align-items:center;justify-content:space-between;min-height:72px">
-    <img src="salesfive-logo-white.png" alt="Salesfive" style="display:block;height:26px;width:auto">
+    <img src="salesfive-logo-white.png" alt="Salesfive" style="display:block;height:26px;width:auto"/>
     <button data-close="1" aria-label="Schließen" style="width:48px;height:48px;margin-right:-12px;background:none;border:0;color:#F4F4F2;font-size:26px;line-height:1;cursor:pointer">×</button>
   </div>
   <div style="display:flex;flex-direction:column;gap:6px">
@@ -50,7 +55,14 @@
     <a href="#details" data-mlink="1" style="font-size:40px;letter-spacing:-.04em;line-height:1.25;text-transform:uppercase">Details</a>
     <a href="#registration" data-mlink="1" style="font-size:40px;letter-spacing:-.04em;line-height:1.25;text-transform:uppercase;color:#00D5DC">RSVP</a>
   </div>
-  <div style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.40)">25 November 2026 · Munich</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <div style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.40)">25 November 2026 · Munich</div>
+    <div style="display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em">
+      <button data-lang="de" style="background:none;border:0;padding:8px 4px;cursor:pointer;color:#F4F4F2;font:inherit;letter-spacing:.14em">DE</button>
+      <span style="color:rgba(255,255,255,.30)">/</span>
+      <button data-lang="en" style="background:none;border:0;padding:8px 4px;cursor:pointer;color:rgba(255,255,255,.40);font:inherit;letter-spacing:.14em">EN</button>
+    </div>
+  </div>
 </div>
 
 <main>
@@ -100,11 +112,11 @@
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,7vw,120px);align-items:start;max-width:1600px;margin:0 auto">
     <h2 data-reveal="1" style="margin:0;font-weight:400;font-size:clamp(44px,7vw,120px);line-height:.9;letter-spacing:-.045em;text-transform:uppercase">A decade<br/>worth<br/>celebrating.</h2>
     <div style="display:flex;flex-direction:column;gap:28px;max-width:640px;font-size:clamp(17px,1.25vw,21px);line-height:1.62;color:rgba(255,255,255,.72)">
-      <p data-reveal="1" style="margin:0">Am 25. November 2026 gibt es für uns gleich zwei besondere Anlässe: Wir feiern 10 Jahre Salesfive und hosten im Anschluss an die Agentforce World Tour in München unser eigenes After Event.</p>
-      <p data-reveal="1" style="margin:0">Diesen Abend möchten wir mit den Menschen verbringen, die Salesfive in den vergangenen zehn Jahren begleitet und geprägt haben: mit unseren Kunden, Partnern, Wegbegleitern und Freunden.</p>
-      <p data-reveal="1" style="margin:0;color:rgba(255,255,255,.62)">Freuen Sie sich auf einen besonderen Abend mit guten Gesprächen, neuen Begegnungen, Drinks, Musik und natürlich dem einen oder anderen Rückblick auf zehn Jahre Salesfive.</p>
+      <p data-reveal="1" data-en="On 25 November 2026 we have two reasons to celebrate: ten years of Salesfive, and our own after event following the Agentforce World Tour in Munich." style="margin:0">Am 25. November 2026 gibt es für uns gleich zwei besondere Anlässe: Wir feiern 10 Jahre Salesfive und hosten im Anschluss an die Agentforce World Tour in München unser eigenes After Event.</p>
+      <p data-reveal="1" data-en="We want to spend this evening with the people who have shaped and accompanied Salesfive over the past ten years: our clients, partners, companions and friends." style="margin:0">Diesen Abend möchten wir mit den Menschen verbringen, die Salesfive in den vergangenen zehn Jahren begleitet und geprägt haben: mit unseren Kunden, Partnern, Wegbegleitern und Freunden.</p>
+      <p data-reveal="1" data-en="Look forward to an evening of good conversations, new connections, drinks, music and a few stories from ten years of Salesfive." style="margin:0;color:rgba(255,255,255,.62)">Freuen Sie sich auf einen besonderen Abend mit guten Gesprächen, neuen Begegnungen, Drinks, Musik und natürlich dem einen oder anderen Rückblick auf zehn Jahre Salesfive.</p>
       <a href="#registration" data-reveal="1" data-arrowlink="1" style="align-self:flex-start;display:inline-flex;align-items:center;gap:12px;margin-top:12px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:#F4F4F2;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.35)">
-        <span>Jetzt anmelden</span><span data-arrow="1" style="display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)">→</span>
+        <span data-en="RSVP now">Jetzt anmelden</span><span data-arrow="1" style="display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)">→</span>
       </a>
     </div>
   </div>
@@ -129,7 +141,13 @@
     </div>
     <div data-reveal="1" style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,3fr);gap:clamp(16px,4vw,60px);align-items:baseline;padding:clamp(24px,3vw,38px) 0;border-top:1px solid rgba(255,255,255,.15)">
       <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.40)">Location</div>
-      <div style="font-size:clamp(30px,5vw,84px);line-height:1;letter-spacing:-.04em;text-transform:uppercase">Munich, Germany</div>
+      <div>
+        <a href="https://scholastika.de/" target="_blank" rel="noopener" data-arrowlink="1" style="display:inline-flex;align-items:baseline;gap:18px;font-size:clamp(30px,5vw,84px);line-height:1;letter-spacing:-.04em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:6px">
+          <span>Scholastika</span><span data-arrow="1" style="font-size:clamp(16px,1.8vw,28px);transition:transform .45s cubic-bezier(.16,1,.3,1);color:rgba(255,255,255,.5)">↗</span>
+        </a>
+        <div style="margin-top:16px;font-size:clamp(14px,1.2vw,18px);line-height:1.5;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.62)">Ledererstraße 5 · 80331 München</div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Scholastika%20Ledererstra%C3%9Fe%205%2C%2080331%20M%C3%BCnchen" target="_blank" rel="noopener" data-en="Open in Google Maps" style="display:inline-block;margin-top:12px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#00D5DC;border-bottom:1px solid rgba(0,213,220,.4);padding-bottom:3px">In Google Maps öffnen</a>
+      </div>
     </div>
     <div data-reveal="1" style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,3fr);gap:clamp(16px,4vw,60px);align-items:baseline;padding:clamp(24px,3vw,38px) 0;border-top:1px solid rgba(255,255,255,.15)">
       <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.40)">Occasion</div>
@@ -137,7 +155,13 @@
     </div>
     <div data-reveal="1" style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,3fr);gap:clamp(16px,4vw,60px);align-items:baseline;padding:clamp(24px,3vw,38px) 0;border-top:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15)">
       <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.40)">Time</div>
-      <div style="font-size:clamp(30px,5vw,84px);line-height:1;letter-spacing:-.04em;text-transform:uppercase;color:rgba(255,255,255,.52)">Details follow soon</div>
+      <div>
+        <div data-en="7:00 PM" style="font-size:clamp(30px,5vw,84px);line-height:1;letter-spacing:-.04em;text-transform:uppercase">19:00 Uhr</div>
+        <div data-en="Doors open at 7 pm" style="margin-top:16px;font-size:clamp(14px,1.2vw,18px);letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.62)">Einlass ab 19:00 Uhr</div>
+      </div>
+    </div>
+    <div data-reveal="1" style="margin-top:clamp(40px,6vw,80px);position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.15)">
+      <iframe title="Karte Scholastika München" src="https://www.google.com/maps?q=Scholastika%20Ledererstra%C3%9Fe%205%2C%2080331%20M%C3%BCnchen&amp;output=embed" width="100%" height="380" style="display:block;border:0;filter:grayscale(1) invert(.92) contrast(.9)" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -185,23 +209,23 @@
   <div style="position:relative;max-width:1600px;margin:0 auto;text-align:center">
     <h2 data-reveal="1" style="margin:0;font-weight:400;font-size:clamp(50px,11vw,190px);line-height:.86;letter-spacing:-.055em;text-transform:uppercase">See you<br/>in Munich?</h2>
     <div data-reveal="1" style="margin-top:clamp(28px,4vw,52px);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.40)">25 November 2026 · Munich</div>
-    <p data-reveal="1" style="margin:20px auto 0;max-width:560px;font-size:clamp(17px,1.2vw,20px);line-height:1.6;color:rgba(255,255,255,.72)">We’d love to celebrate this night with you. Save the date und feiern Sie mit uns.</p>
+    <p data-reveal="1" data-en="We’d love to celebrate this night with you. Save the date and join us." style="margin:20px auto 0;max-width:560px;font-size:clamp(17px,1.2vw,20px);line-height:1.6;color:rgba(255,255,255,.72)">Wir würden diesen Abend gerne mit Ihnen feiern. Save the date und feiern Sie mit uns.</p>
     <a href="https://10-years-salesfive.events.salesfive.com/" data-rsvp="1" data-reveal="1" data-arrowlink="1" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:16px;margin-top:clamp(36px,5vw,64px);font-size:clamp(16px,2vw,26px);letter-spacing:.2em;text-transform:uppercase;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.55)">
-      <span>Jetzt anmelden</span><span data-arrow="1" style="display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)">→</span>
+      <span data-en="RSVP now">Jetzt anmelden</span><span data-arrow="1" style="display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)">→</span>
     </a>
   </div>
 </section>
 
-<section id="registration" data-replace="EVENITO REGISTRATION LINK" style="padding:0 5vw clamp(110px,15vw,200px);background:#080808">
+<section id="registration" data-replace="EVENITO REGISTRATION FORM GOES HERE" style="padding:0 5vw clamp(110px,15vw,200px);background:#080808">
   <div style="max-width:1100px;margin:0 auto">
     <div data-reveal="1" style="font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.40);margin-bottom:28px">Registration</div>
     <div data-reveal="1" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(20px,3vw,32px);padding:clamp(48px,7vw,96px) 24px;border-top:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15);text-align:center">
-      <div style="font-size:clamp(24px,3.4vw,48px);line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;max-width:760px">Wir freuen uns auf Ihre Anmeldung.</div>
-      <p style="margin:0;max-width:520px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;color:rgba(255,255,255,.62)">Die Anmeldung erfolgt über unser Eventportal. Sie erhalten dort direkt eine Bestätigung per E-Mail.</p>
+      <div data-en="We look forward to your registration." style="font-size:clamp(24px,3.4vw,48px);line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;max-width:760px">Wir freuen uns auf Ihre Anmeldung.</div>
+      <p data-en="Registration runs through our event portal. You will receive a confirmation by email right away." style="margin:0;max-width:520px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;color:rgba(255,255,255,.62)">Die Anmeldung erfolgt über unser Eventportal. Sie erhalten dort direkt eine Bestätigung per E-Mail.</p>
       <a href="https://10-years-salesfive.events.salesfive.com/" data-rsvp="1" data-arrowlink="1" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:16px;margin-top:4px;padding:18px 40px;min-height:56px;border:1px solid rgba(255,255,255,.55);border-radius:9999px;font-size:clamp(13px,1.2vw,16px);letter-spacing:.2em;text-transform:uppercase;transition:background-color .3s ease,color .3s ease">
-        <span>Jetzt anmelden</span><span data-arrow="1" style="display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)">→</span>
+        <span data-en="RSVP now">Jetzt anmelden</span><span data-arrow="1" style="display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)">→</span>
       </a>
-      <div style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.40)">Anmeldeschluss folgt</div>
+      <div style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.40)" data-en="Registration deadline to be announced">Anmeldeschluss folgt</div>
     </div>
   </div>
 </section>
@@ -211,11 +235,11 @@
     <h2 data-reveal="1" style="margin:0;font-weight:400;font-size:clamp(44px,8vw,140px);line-height:.88;letter-spacing:-.055em;text-transform:uppercase">Save the<br/>date.</h2>
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px">
       <div style="font-size:clamp(22px,2.4vw,38px);letter-spacing:.06em;text-transform:uppercase">25.11.2026 · Munich</div>
-      <p style="margin:0;max-width:480px;font-size:clamp(16px,1.15vw,19px);line-height:1.6;color:rgba(255,255,255,.62)">Weitere Details zur Location und zum Programm folgen in Kürze. Wir freuen uns auf Sie.</p>
+      <p data-en="Further details on the programme will follow shortly. We look forward to seeing you." style="margin:0;max-width:480px;font-size:clamp(16px,1.15vw,19px);line-height:1.6;color:rgba(255,255,255,.62)">Weitere Details zur Location und zum Programm folgen in Kürze. Wir freuen uns auf Sie.</p>
       <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.40)">Salesfive Team</div>
     </div>
     <div data-reveal="1" style="display:flex;justify-content:flex-end">
-      <img src="maskottchen.png" alt="Salesfive Maskottchen im 10-Years-Jacket" style="width:clamp(180px,22vw,300px);height:auto">
+      <img src="maskottchen.png" alt="Salesfive Maskottchen im 10-Years-Jacket" style="width:clamp(180px,22vw,300px);height:auto"/>
     </div>
   </div>
 </section>
@@ -224,7 +248,7 @@
 
 <footer style="padding:clamp(80px,10vw,140px) 5vw 0;background:#080808;border-top:1px solid rgba(255,255,255,.10);overflow:hidden">
   <div style="max-width:1600px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(36px,5vw,80px)">
-    <div style="line-height:0"><img src="salesfive-logo-white.png" alt="Salesfive" style="display:block;height:34px;width:auto;max-width:100%"></div>
+    <div style="line-height:0"><img src="salesfive-logo-white.png" alt="Salesfive" style="display:block;height:34px;width:auto;max-width:100%"/></div>
     <div style="display:flex;flex-direction:column;gap:12px">
       <a href="#about" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.62)">Event</a>
       <a href="#anniversary" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.62)">About</a>
@@ -244,8 +268,8 @@
   <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;padding:22px 0 26px;border-top:1px solid rgba(255,255,255,.10);margin-top:clamp(24px,3vw,40px);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.40)">
     <span>© 2026 Salesfive</span>
     <span style="display:flex;flex-wrap:wrap;gap:24px">
-      <a href="https://www.salesfive.com/datenschutz/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.40);letter-spacing:.2em">Datenschutz</a>
-      <a href="https://www.salesfive.com/impressum/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.40);letter-spacing:.2em">Impressum</a>
+      <a href="https://www.salesfive.com/datenschutz/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.40);letter-spacing:.2em" data-en="Privacy">Datenschutz</a>
+      <a href="https://www.salesfive.com/impressum/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.40);letter-spacing:.2em" data-en="Legal notice">Impressum</a>
     </span>
     <span>10 Years. One Night.</span>
   </div>
@@ -261,6 +285,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const root = document;
     root.querySelectorAll('[data-rsvp]').forEach(a => { a.setAttribute('href', EVENITO_URL); a.setAttribute('target', '_blank'); a.setAttribute('rel', 'noopener'); });
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // language switch (DE default, EN via data-en)
+    const i18n = Array.from(root.querySelectorAll('[data-en]'));
+    i18n.forEach(el => { el.setAttribute('data-de', el.innerHTML); });
+    const langBtns = Array.from(root.querySelectorAll('[data-lang]'));
+    const setLang = (lang) => {
+      i18n.forEach(el => { el.innerHTML = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-de'); });
+      document.documentElement.setAttribute('lang', lang);
+      langBtns.forEach(b => { b.style.color = b.getAttribute('data-lang') === lang ? '#F4F4F2' : 'rgba(255,255,255,.40)'; });
+      try { localStorage.setItem('sf10-lang', lang); } catch (e) {}
+    };
+    langBtns.forEach(b => b.addEventListener('click', () => setLang(b.getAttribute('data-lang'))));
+    let stored = null;
+    try { stored = localStorage.getItem('sf10-lang'); } catch (e) {}
+    const browserDe = (navigator.language || 'de').toLowerCase().indexOf('de') === 0;
+    setLang(stored === 'en' || stored === 'de' ? stored : (browserDe ? 'de' : 'en'));
 
     // hero image fallback -> keep atmospheric placeholder visible
     const heroImg = root.querySelector('[data-heroimg]');
